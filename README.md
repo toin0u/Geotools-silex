@@ -47,7 +47,7 @@ Examples
 
 ```php
 // TODO
-``
+```
 
 [Read more...](http://geotools-php.org/#distance)
 

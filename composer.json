@@ -14,8 +14,8 @@
     ],
     "support": {
         "email": "support@geotools-php.org",
-        "issues": "https://github.com/toin0u/Geotools/issues",
-        "source": "https://github.com/toin0u/Geotools"
+        "issues": "https://github.com/toin0u/Geotools-silex/issues",
+        "source": "https://github.com/toin0u/Geotools-silex"
     },
     "require": {
         "php": ">=5.3.0",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Toin0u\\Geotools": "src/"
+            "Geotools": "src/"
         }
     },
     "extra": {

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Getools\Silex;
+namespace Geotools\Silex;
 
 use Geotools\Geotools;
 use Geotools\Coordinate\Coordinate;
