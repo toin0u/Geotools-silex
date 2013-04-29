@@ -11,16 +11,15 @@
 
 namespace Geotools\Silex;
 
-use Geotools\Geotools;
-use Geotools\Coordinate\Coordinate;
 use Silex\Application;
+use Silex\ServiceProviderInterface;
 
 /**
  * Geotools service provider
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class GeotoolsServiceProvider extends ServiceProviderInterface
+class GeotoolsServiceProvider implements ServiceProviderInterface
 {
     /**
      * {@inheritDoc}
