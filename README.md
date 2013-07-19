@@ -39,14 +39,14 @@ Examples
 ## Coordinate & Ellipsoid ##
 
 ```php
-use Geotools\Coordinate\Ellipsoid;
+use League\Geotools\Coordinate\Ellipsoid;
 
 $geotools = $app['geotools'];
 
 // from an \Geocoder\Result\ResultInterface instance within Airy ellipsoid
-$coordinate = $geotools->coordinate($geocoderResult, Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::AIRY));
+$coordinate = $geotools->coordinate($geocoderResult, League\Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::AIRY));
 // or in an array of latitude/longitude coordinate within GRS 1980 ellipsoid
-$coordinate = $geotools->coordinate(array(48.8234055, 2.3072664), Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::GRS_1980));
+$coordinate = $geotools->coordinate(array(48.8234055, 2.3072664), League\Geotools\Coordinate\Ellipsoid::createFromName(Ellipsoid::GRS_1980));
 // or in latitude/longitude coordinate within WGS84 ellipsoid
 $coordinate = $geotools->coordinate('48.8234055, 2.3072664');
 // or in degrees minutes seconds coordinate within WGS84 ellipsoid
@@ -116,11 +116,11 @@ printf("%s\n", $point->initialCardinal()); // SSE (SouthSouthEast)
 printf("%d\n", $point->finalBearing()); // 160 (degrees)
 printf("%s\n", $point->finalCardinal()); // SSE (SouthSouthEast)
 
-$middlePoint = $point->middle(); // \Geotools\Coordinate\Coordinate
+$middlePoint = $point->middle(); // \League\Geotools\Coordinate\Coordinate
 printf("%s\n", $middlePoint->getLatitude()); // 46.070143125815
 printf("%s\n", $middlePoint->getLongitude()); // 3.9152401085931
 
-$destinationPoint = $geotools->point()->setFrom($coordA)->destination(180, 200000); // \Geotools\Coordinate\Coordinate
+$destinationPoint = $geotools->point()->setFrom($coordA)->destination(180, 200000); // \League\Geotools\Coordinate\Coordinate
 printf("%s\n", $destinationPoint->getLatitude()); // 47.026774650075
 printf("%s\n", $destinationPoint->getLongitude()); // 2.3072664
 ```
@@ -139,7 +139,7 @@ $encoded = $geotools->geohash()->encode($coordToGeohash, 4); // 12 is the defaul
 // encoded
 printf("%s\n", $encoded->getGeohash()); // spey
 // encoded bounding box
-$boundingBox = $encoded->getBoundingBox(); // array of \Geotools\Coordinate\CoordinateInterface
+$boundingBox = $encoded->getBoundingBox(); // array of \League\Geotools\Coordinate\CoordinateInterface
 $southWest   = $boundingBox[0];
 $northEast   = $boundingBox[1];
 printf("http://www.openstreetmap.org/?minlon=%s&minlat=%s&maxlon=%s&maxlat=%s&box=yes\n",
@@ -153,7 +153,7 @@ $decoded = $geotools->geohash()->decode('spey61y');
 printf("%s\n", $decoded->getCoordinate()->getLatitude()); // 43.296432495117
 printf("%s\n", $decoded->getCoordinate()->getLongitude()); // 5.3702545166016
 // decoded bounding box
-$boundingBox = $decoded->getBoundingBox(); //array of \Geotools\Coordinate\CoordinateInterface
+$boundingBox = $decoded->getBoundingBox(); //array of \League\Geotools\Coordinate\CoordinateInterface
 $southWest   = $boundingBox[0];
 $northEast   = $boundingBox[1];
 printf("http://www.openstreetmap.org/?minlon=%s&minlat=%s&maxlon=%s&maxlat=%s&box=yes\n",
