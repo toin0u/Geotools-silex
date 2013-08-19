@@ -3,6 +3,9 @@ Geotools for Silex
 
 This package allows you to use [**Geotools**](http://geotools-php.org) in [**Silex**](http://silex.sensiolabs.org/).
 
+[![Latest Stable Version](https://poser.pugx.org/toin0u/Geotools-silex/v/stable.png)](https://packagist.org/packages/toin0u/Geotools-silex)
+[![Total Downloads](https://poser.pugx.org/toin0u/Geotools-silex/downloads.png)](https://packagist.org/packages/toin0u/Geotools-silex)
+
 
 Installation
 ------------
