@@ -23,6 +23,10 @@
         "league/geotools" : "~0.3"
     },
 
+    "require-dev" : {
+        "silex/silex" : "~1.1"
+    },
+
     "autoload" : {
         "psr-0" : {
             "Geotools" : "src/"
