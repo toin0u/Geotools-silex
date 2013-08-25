@@ -30,7 +30,7 @@ class GeotoolsServiceProvider implements ServiceProviderInterface
             return new Geotools;
         });
 
-        $this->registerConsole();
+        $this->registerConsole($app);
     }
 
     /**
