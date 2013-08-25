@@ -179,6 +179,13 @@ printf("http://www.openstreetmap.org/?minlon=%s&minlat=%s&maxlon=%s&maxlat=%s&bo
 [Read more...](http://geotools-php.org/#geohash)
 
 
+CLI
+---
+
+If you have a console provider registred in your application then all the
+[Geotools' commands](http://geotools-php.org/#cli) will be available in your console.
+
+
 Changelog
 ---------
 
