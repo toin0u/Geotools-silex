@@ -50,23 +50,23 @@ class GeotoolsServiceProvider implements ServiceProviderInterface
         }
 
         $app['console'] = $app->share($app->extend('console', function ($console, $app) {
-            $console->add(new League\Geotools\CLI\Distance\All);
-            $console->add(new League\Geotools\CLI\Distance\Flat);
-            $console->add(new League\Geotools\CLI\Distance\Haversine);
-            $console->add(new League\Geotools\CLI\Distance\Vincenty);
-            $console->add(new League\Geotools\CLI\Point\InitialBearing);
-            $console->add(new League\Geotools\CLI\Point\FinalBearing);
-            $console->add(new League\Geotools\CLI\Point\InitialCardinal);
-            $console->add(new League\Geotools\CLI\Point\FinalCardinal);
-            $console->add(new League\Geotools\CLI\Point\Middle);
-            $console->add(new League\Geotools\CLI\Point\Destination);
-            $console->add(new League\Geotools\CLI\Geohash\Encode);
-            $console->add(new League\Geotools\CLI\Geohash\Decode);
-            $console->add(new League\Geotools\CLI\Convert\DM);
-            $console->add(new League\Geotools\CLI\Convert\DMS);
-            $console->add(new League\Geotools\CLI\Convert\UTM);
-            $console->add(new League\Geotools\CLI\Geocoder\Geocode);
-            $console->add(new League\Geotools\CLI\Geocoder\Reverse);
+            $console->add(new \League\Geotools\CLI\Distance\All);
+            $console->add(new \League\Geotools\CLI\Distance\Flat);
+            $console->add(new \League\Geotools\CLI\Distance\Haversine);
+            $console->add(new \League\Geotools\CLI\Distance\Vincenty);
+            $console->add(new \League\Geotools\CLI\Point\InitialBearing);
+            $console->add(new \League\Geotools\CLI\Point\FinalBearing);
+            $console->add(new \League\Geotools\CLI\Point\InitialCardinal);
+            $console->add(new \League\Geotools\CLI\Point\FinalCardinal);
+            $console->add(new \League\Geotools\CLI\Point\Middle);
+            $console->add(new \League\Geotools\CLI\Point\Destination);
+            $console->add(new \League\Geotools\CLI\Geohash\Encode);
+            $console->add(new \League\Geotools\CLI\Geohash\Decode);
+            $console->add(new \League\Geotools\CLI\Convert\DM);
+            $console->add(new \League\Geotools\CLI\Convert\DMS);
+            $console->add(new \League\Geotools\CLI\Convert\UTM);
+            $console->add(new \League\Geotools\CLI\Geocoder\Geocode);
+            $console->add(new \League\Geotools\CLI\Geocoder\Reverse);
 
             return $console;
         }));
