@@ -7,6 +7,7 @@ This package allows you to use [**Geotools**](http://geotools-php.org) in [**Sil
 [![Total Downloads](https://poser.pugx.org/toin0u/Geotools-silex/downloads.png)](https://packagist.org/packages/toin0u/Geotools-silex)
 [![Build Status](https://secure.travis-ci.org/toin0u/Geotools-silex.png)](http://travis-ci.org/toin0u/Geotools-silex)
 [![Coverage Status](https://coveralls.io/repos/toin0u/Geotools-silex/badge.png)](https://coveralls.io/r/toin0u/Geotools-silex)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/200a0ac5-37fd-410c-afca-7dc3a2b03c2c/mini.png)](https://insight.sensiolabs.com/projects/200a0ac5-37fd-410c-afca-7dc3a2b03c2c)
 
 Installation
 ------------
