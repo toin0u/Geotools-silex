@@ -49,7 +49,7 @@ class GeotoolsServiceProvider implements ServiceProviderInterface
             return;
         }
 
-        $app['console'] = $app->share($app->extend('console', function ($console, $app) {
+        $app['console'] = $app->share($app->extend('console', function ($console) {
             $console->add(new \League\Geotools\CLI\Distance\All);
             $console->add(new \League\Geotools\CLI\Distance\Flat);
             $console->add(new \League\Geotools\CLI\Distance\Haversine);
