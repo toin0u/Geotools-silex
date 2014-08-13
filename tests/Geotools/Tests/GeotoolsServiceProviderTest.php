@@ -13,7 +13,7 @@ namespace Geotools\Tests;
 
 use Silex\Application;
 use Geotools\Silex\GeotoolsServiceProvider;
-use Symfony\Component\Console\Application as ConsoleServiceProvider;
+use Symfony\Component\Console\Application as Console;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
@@ -46,7 +46,7 @@ class GeotoolsServiceProviderTest extends \PHPUnit_Framework_TestCase
     public function testConsoleProvider()
     {
         $this->app['console'] = $this->app->share(function ($app) {
-            return new ConsoleServiceProvider;
+            return new Console;
         });
 
         $this->app->register(new GeotoolsServiceProvider);

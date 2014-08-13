@@ -13,6 +13,7 @@ namespace Geotools\Silex;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
+use Symfony\Component\Console\Application as Console;
 
 /**
  * Geotools service provider
@@ -49,7 +50,7 @@ class GeotoolsServiceProvider implements ServiceProviderInterface
             return;
         }
 
-        $app['console'] = $app->share($app->extend('console', function ($console) {
+        $app['console'] = $app->share($app->extend('console', function (Console $console) {
             $console->add(new \League\Geotools\CLI\Distance\All);
             $console->add(new \League\Geotools\CLI\Distance\Flat);
             $console->add(new \League\Geotools\CLI\Distance\Haversine);
